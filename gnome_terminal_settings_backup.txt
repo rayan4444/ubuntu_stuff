@@ -1,0 +1,14 @@
+[legacy/profiles:]
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '33c0ad4d-8a81-430e-a594-0e8c5235911d']
+
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-transparency-percent=29
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+
+[legacy/profiles:/:33c0ad4d-8a81-430e-a594-0e8c5235911d]
+visible-name='rayan'
+
+[legacy]
+schema-version=uint32 3
