@@ -59,6 +59,11 @@ snap install slack
 # Notion
 snap install notion-snap
 
+# Dropbox
+
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
+
 ## Python stuff
 
 # pip
