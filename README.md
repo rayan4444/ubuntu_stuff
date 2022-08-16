@@ -42,13 +42,9 @@ git clone <this repo>
 sudo ./setup.sh
 ```
 
-5) diff the bash RC for nice git brach viz, and other important install stuff
+5) Diff the original ```.bashrc``` with the one here to add git branch visualisation, aliases etc. 
 
-## Overview
+## Content overview
 * ```.bashrc```: bashrc file that I used in my previous ubuntu install, maybe diff it with the current one to keep some of the stuff (aliases, git branch etc.)
 * ```setup.sh```: to install packages I use a lot: vscode, chrome, slack, spotify, notion, kicad, fusion 360, gnome tweaks, telegram, arduino, coolterm
 * ```throttlestop_setup.sh```: my Dell has a CPU throttling issue whenever I use it on battery, this script sets up a systemd service on boot up that disables throttling
-*  
-
-## Checklist
-[] Toolchains: NRF52 (see IMU wristband repo)
