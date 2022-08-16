@@ -3,7 +3,7 @@
 Things that come in handy when (re)installing ubuntu/linux
 
 
-## How to on a brand new install with default Desktop image
+## How to (on a brand new install with default Desktop image)
 0) update and upgrade
 ```shell
 sudo apt update -y
