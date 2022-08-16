@@ -10,10 +10,10 @@ apt install msr-tools -y
 
 
 # Create the actual script
-echo -ne "Progess : 0/7 \r"
+echo -ne "Progress : 0/7 \r"
 
 mkdir -p /opt/MyScripts
-echo -ne "Progess : 1/7s \r"
+echo -ne "Progress : 1/7s \r"
 
 cat > /opt/MyScripts/throttlestop.sh <<EOF
 #!/bin/sh
@@ -30,11 +30,11 @@ modprobe msr
 wrmsr 0x1FC 2359388
 EOF
 
-echo -ne "Progess : 2/7 \r"
+echo -ne "Progress : 2/7 \r"
 
 # make the script executable
 chmod 777 /opt/MyScripts/throttlestop.sh 
-echo -ne "Progess : 3/7 \r"
+echo -ne "Progress : 3/7 \r"
 
 # create the service: right now I put it after network.target cause I really don't know where else to put it.
 cat > /etc/systemd/system/throttlestop.service <<EOF
@@ -49,18 +49,18 @@ ExecStart=/opt/MyScripts/throttlestop.sh
 [Install]
 WantedBy=multi-user.target
 EOF
-echo -ne  "Progess : 4/7 \r"
+echo -ne  "Progress : 4/7 \r"
 
 # reload systemd
 systemctl daemon-reload
-echo -ne "Progess : 5/7 \r"
+echo -ne "Progress : 5/7 \r"
 
 systemctl enable throttlestop.service
-echo -ne "Progess : 6/7 \r"
+echo -ne "Progress : 6/7 \r"
 
 # start the service                   
 systemctl start throttlestop.service
-echo -ne "Progess : 7/7 \r"
+echo -ne "Progress : 7/7 \r"
 
 echo ""
 echo "DONE"
