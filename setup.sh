@@ -59,6 +59,10 @@ snap install slack
 # Notion
 snap install notion-snap
 
+# Latex
+# so far I only managed to make the setup work if I install the full package. Can uninstall useless lang packages to save space if needed.
+apt install texlive-full
+
 ## Python stuff
 
 # pip
