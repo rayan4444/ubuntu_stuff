@@ -18,6 +18,9 @@ apt install -y software-properties-common apt-transport-https
 apt install -y wget
 apt install -y curl
 
+# net tools
+apt install -y net-tools
+
 # Gnome Tweaks
 apt install -y gnome-tweaks
 
